@@ -1,0 +1,21 @@
+{
+  "opts": {
+    "destination": "docs",
+    "template": "node_modules/better-docs",
+    "recurse": true,
+    "verbose": true
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/better-docs/typescript"
+  ],
+  "tags": {
+    "allowUnknownTags": ["optional"]
+  },
+  "source": {
+    "include": ["src"],
+    "exclude": [".git", "node_modules"],
+    "includePattern": "\\.(ts|tsx)$",
+    "excludePattern": ""
+  }
+}
